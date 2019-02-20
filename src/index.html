@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="./css/common-style.css">
     <title>Document</title>
 </head>
-<body style="color:Yellow; background-color:#66cc66">
+<body>
 
     <style>
+        
+        body::before {
+         content: 'https://proglib.io/wp-content/uploads/2017/11/CSS-interview-questions.jpg';
+         position: fixed; /* Фиксируем на одном месте */
+         left: 0; right: 0; /* Вся ширин */
+         top: 0; bottom: 0; /* Вся высота */
+         z-index: -1; /* Фон ниже текста */
+         /* Параметры фона */
+         background: url(/example/image/aquaria.jpg) center / cover no-repeat;
+         filter: blur(5px); /* Размытие */
+        }
         body {
-  background: url(https://proglib.io/wp-content/uploads/2017/11/CSS-interview-questions.jpg) repeat-x 0 100% fixed,
-  linear-gradient(to top, #5080b1, #004e8c) fixed;
-}
-       
-    
+         color: #fff; /* Цвет текста */
+        }
        </style>
 
 
-    <img src="" alt="Italian Trulli"></div>
-    <img src="img_chania.jpg" alt="Flowers in Chania">
+         <img src="https://proglib.io/wp-content/uploads/2017/11/CSS-interview-questions.jpg" alt="Girl in a jacket" style="width:1000px;height:600px;">
+         <img src="img_chania.jpg" alt="Flowers in Chania">
 
 </body>
 </html>
