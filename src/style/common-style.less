@@ -1,7 +1,32 @@
-html {
-    outline: 1px solid green;
+
+header {
+    text-align: justify;
+    letter-spacing: 1px;
+    height: 8em;
+    padding: 2em 10%;
+    display: inline-block;}
+   
+
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+header h1 {
+    height: 100%;
+}
+ 
+header h1::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;  
+    height: 100%;
 }
 
-body * {
-    outline: 1px solid red;
-}
+
+
+
+
+ 
+
+ 
