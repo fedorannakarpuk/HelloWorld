@@ -1,32 +1,25 @@
 
-header {
-    text-align: justify;
-    letter-spacing: 1px;
-    height: 8em;
-    padding: 2em 10%;
-    display: inline-block;}
-   
+.class2:nth-child(2n) {
+color:red;
+}
+.parent {
+    width: 200px;
+    height:200px;
+    outline:1px solid red;
+}
+.center {
+    padding: 50%;
+    //padding-botta: 50%;
+    outline:1px solid grey;
 
-header::after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
-header h1 {
-    height: 100%;
-}
- 
-header h1::before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;  
-    height: 100%;
 }
 
+.bg-icon1 {
+    width: 100px; height: 100px;
+    background: url('/img/css_sprites.png') -10px -10px;
+}
 
-
-
-
- 
-
- 
+.bg-icon2 {
+    width: 100px; height: 100px;
+    background: url('/img/css_sprites.png') -130px -10px;
+}
