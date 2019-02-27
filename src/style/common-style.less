@@ -13,10 +13,10 @@
     position:fixed;
     top:0;
     left:0;   
-    width: 50%;
-    height: 70%;
+    width: 5%;
+    height: 7%;
     background-color:green;
-                                 padding-top: 60px;
+    padding-top: 60px;
 }
 .position-absolute {
 position:absolute;
@@ -39,7 +39,50 @@ outline: 1px solid red;
 }
 .inner-relative {
     position: relative;
-    top 50%;
-    left 50%;
+    top: 50%;
+    left: 50%;
     transform: translate (-25%);
+}
+.overflow{
+width:300px;
+height: 50px;
+outline: 3px solid blue;
+
+}
+
+.float-example{
+    outline: 5px solid red;
+}
+.float-img{
+    width: 200px;
+    height: 200px;
+
+}
+
+.clearfix:after{
+    content:;
+    display: block;
+clear:both;
+}
+
+
+.float-item{
+    width: 400px;
+    height: 200px;
+    float:left;
+}
+
+
+.float-example-many{
+    outline: 5px solid red;
+}
+
+.float-item.red{
+    background-color: red;
+}
+.float-item.green{
+    background-color: green;
+}
+.float-item.blue{
+    background-color: blue;
 }
