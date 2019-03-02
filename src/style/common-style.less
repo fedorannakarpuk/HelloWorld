@@ -1,7 +1,49 @@
-html {
-    outline: 1px solid green;
-}
 
-body * {
+body{
+    padding-top:100px;
+}
+.block{
     outline: 1px solid red;
 }
+.parent{
+    position: relative;
+height: 300px;
+width: 400px;
+margin: 0 auto;
+background-color: rgb(147, 233, 169); 
+}
+.additional{
+    width: 400px;
+    height: 150px;
+    margin: 15px auto; 
+    
+    
+}
+.child{
+    width: 50%;
+    height: 50%;    
+}
+.center{
+    position: absolute;
+    top:50%;
+    left:50%;
+ transform: translateX(-50%) translateY(-50%);
+}
+.parent .class3 {
+ background-color: blue; 
+ 
+}
+
+.parent .class2 {
+    background-color: green;
+   }
+.class2.additional{
+    background-color: rgb(218, 184, 35);
+}
+.parent .class2 .class3 {
+  
+    border-radius: 50px;
+   }
+   .additional.class3+.parent{
+       background-color: rgb(211, 14, 14);
+   }
