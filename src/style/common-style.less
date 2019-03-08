@@ -1,67 +1,42 @@
-.contener{
-    display: block;/* Цвет фона   background-color:rgb(219, 241, 241); */
-    margin:5px;
-    outline: 3px red solid;
-    padding:10px;
-    background:red;
-    
-}
+
  @font-face {
     font-family: TuesdayNight;/* Гарнитура шрифта */
     src: url(fonts/TuesdayNight.otf);/* Путь к файлу со шрифтом */
 }
-.zero{
-    display: block;/*весь этот блог делает рамки*/
-    margin:15px;
-    outline: 3px rgba(3, 3, 3, 0.507) solid;
-    padding:10px;
-}
-.contener.block1{
-    font-size:35px;
-    font-family: TuesdayNight;/* Гарнитура шрифта */
-    src: url(fonts/TuesdayNight.otf);/* Путь к файлу со шрифтом */
-    color:rgb(8, 8, 8);
-}
-
-ul{
-    list-style-type: none; /*указали, что нет ни кругов не порядкового номера*/
-    padding: 0;
-    
-}
-ul>li{
-    padding: 10px 15px;
-    margin: 5px;
-    border:2px solid black;
-    
-}
-ul>li>a{
-    color: #000;
-    font-size: 40px;
-    flex-wrap: nowrap;
-}
 .hd{
     width: 100px;
     height: 100px;
-    background-color: green;
     border:2px solid rgb(255, 187, 0);
     margin: 10px;
+    background: url(/img/53-3.jpg) green; /* Цвет фона, путь к фоновому изображению и 
+                                                        повторение фона по вертикали */
+    flex-direction: row;
 }
-.cap{
+.header{
     display: flex;
     justify-content: center;
+    outline: 3px red solid;
+    background-color: aqua;
+    background: url(/img/forest.jpg) fixed center;
+}
+.Blitz{
+    margin-right: 40%;
+}
+.cat{
+    display: block;
+    width:auto;
+    height: 300px;
+    margin: 20px auto;
+    border-radius:30px;
 }
 .block1{
-    background-color: violet;
+    display: block;
+    outline: 3px red solid;
+    height: 500px;
 }
 .block2{
-    background: rgb(68, 194, 216);
-}
-.block3{
-    background: rgb(214, 216, 68);
-}
-.block4{
-    background: rgb(111, 35, 199);
-}
-.block5{
-    background: rgb(241, 6, 132);
+    display: block;
+    outline: 3px red solid;
+    height: 500px;
+    margin-top: 15px;
 }
