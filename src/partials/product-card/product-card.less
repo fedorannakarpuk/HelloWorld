@@ -1,16 +1,31 @@
-.product-item__images {
+.product-item{
+display: flexbox;
+
+
+&__images {
     display: table-row;
 }
 
-.product-item__previews-wrapper,
-.product-item__img {
+&__previews-wrapper,
+&__img {
     display: table-cell;
-    max-width: 100%;
-    min-height: 100%;
+    padding: 1px;
 }
 
-.product-item__previews-wrapper {
+&__previews-wrapper {
     width: 25%;
-    outline: 1px solid red;
+    outline: 5px solid blue;
     vertical-align: top;
+}
+&__img{
+     max-width: 100%;
+    max-height: 100%;
+}
+&__img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
 }
