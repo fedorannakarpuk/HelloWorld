@@ -1,31 +1,66 @@
-.header{
-  display: flex;
-  outline: 2px solid black;
- 
-}
-.logo{
-  outline: 2px solid black;
-  background-color: rgb(196, 115, 131);
-  margin: 10px;
-  width: 20%;
-}
-._main-menu{
-  outline: 2px solid black;
-  margin: 10px;
-  display: inline-flex;
-  width:-webkit-fill-available;
-  width: 80%;
+body{
+  margin: 0;
+  padding: 0;
+  background-color: burlywood;
 }
 a{
-  display: inline-flex;
-  outline: 5px solid rgb(17, 109, 58);
-  margin: 10px;
-  height: 100px;
+  text-decoration: none; //чтобы не было подчеркиваний
 }
-.main-menu__item--top{
-color: red;
-align-items: flex-start;
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;  //чтобы не было никаких кружочков
 }
-.main-menu__item--bottom{
-  align-items: flex-end;
+// внешний вид меню
+
+.side{
+  width: 200px;
+  margin:20px; //задаем ширину и отступ, чоб не прилегало по краям
 }
+
+.menu a{
+  background: #b98d8d;
+  color:fff;
+  padding: 10px;
+  display: block;
+  border-bottom: 1px solid #666;
+  transition: 0.5s all;  //задаем плавность подсвечивания
+}
+.menu a:hover{  //показываем как при наведении работает
+background: rgb(211, 182, 182);
+padding: 10px 0 10px 20px;  //ещё более плаввают пункты
+}
+
+//Всплывающее меню
+
+// АНИМАЦТЯ ПРИ  display block и none НЕ РАБОТАЕТ
+
+
+
+//Будем делать все за счет позицианирования, т.е. для подпунктов зададим абсалютное позиционирование,
+//чтобы они никак не влияли на структуру нашего сайта
+//Т.К. если будет идти контент и position будет не absolute они будут сбивать его
+
+.menu__list{   
+  position: relative;
+}   //для того, чтобы мы могли привязать местоположегие подругктов к нашим пунктам
+.menu__sub{
+  position: absolute;
+  width: 100%; //чтобы застягтвались на всю ширину
+ // top:0;  //чтобы появлялось на той же высоте, что и основное
+  top: -9999em;   // наши блоки улетели вверх
+  left: 100%;  //сдвинули вправо все подпункты
+  opacity: 0; //подпункты не видны, но они по прежнему остались на месте
+  transition: 0.5s opacity;  //будет приниматься только к свойсту, где есть   opacity
+  border-left: 10px solid transparent;   // прозрачная граница
+}
+.menu__list:hover .menu__sub{   //при наведении на класс menu__list наш класс menu__sub будет меняться
+  //а точнее будет меняться свойство opacity. При неведении видны подпункты
+  opacity: 1;
+  top: 0; //заново все пункты работают
+}
+.wrap{
+  display: block;
+  outline: 3px solid black;
+}
+
