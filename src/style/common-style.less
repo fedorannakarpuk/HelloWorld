@@ -1,7 +1,9 @@
+@import "../partials/main-menu/main-menu.less";
+
 .header{
   display: flex;
   outline: 2px solid black;
- 
+ justify-content: space-between;
 }
 .logo{
   outline: 2px solid black;
@@ -12,12 +14,13 @@
 ._main-menu{
   outline: 2px solid black;
   margin: 10px;
-  display: inline-flex;
-  width:-webkit-fill-available;
+  display: flex;
+  justify-content: space-between;
   width: 80%;
 }
 a{
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   outline: 5px solid rgb(17, 109, 58);
   margin: 10px;
   height: 100px;
