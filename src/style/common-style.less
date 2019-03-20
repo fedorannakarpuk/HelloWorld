@@ -1,7 +1,25 @@
-html {
+* { //применяется для всех
     outline: 1px solid green;
 }
+.accordion{
+  width: 500px;
+  margin: 0 auto;
+  
+  &__capture,&__description{
+    border: 3px solid red;
+  }
 
-body * {
-    outline: 1px solid red;
+}
+#close:checked ~ .accordion__description{
+height: 0px;
+overflow: hidden;
+}
+input{
+display: none;
+}
+#close:checked ~ .accordion__capture [for="close"]{
+  display: none;
+}
+#open:checked ~ .accordion__capture [for="open"]{
+  display: none;
 }
