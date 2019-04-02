@@ -9,14 +9,38 @@
 </head>
 <body>
     
-<div onclick="handler();">
-Clik me!
-</div>
-<script>
-function handler(e){
-    alert('Hello World')
-}
-</script>
+<!-- <div onclick="handler();"> -->
+<!-- Clik me! -->
+<!-- </div> -->
+<!-- <script> -->
+<!-- function handler(a){ -->
+    <!-- // alert('Hello World') -->
+<!-- } -->
+<!-- </script> -->
+<script>function test(){
+        var eng = ['green','yellow','red','black','white'];
+        var rus =['зеленый','желтый','красный','черный','белый'];
+
+        do{
+            var index = Math.ceil(Math.raкndom() * (eng.length-1));
+            var answer = prompt(eng[index]);
+            if(rus[index] == answer) {
+                alert('Красава')
+            } else {
+                alert('иди учи!')
+            }
+        } while (confirm('Продолжить?'));
+
+    }
+        test();
+    </script>
+
+
+
+
+
+
+
 
     
 </body>
